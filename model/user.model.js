@@ -1,4 +1,3 @@
-//const { type } = require("mode/lib/extension");
 const mongoose = required("mongoose");
 
 const userSchema = new mongoose.Schema({
