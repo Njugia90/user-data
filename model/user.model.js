@@ -1,10 +1,9 @@
-
-const mongoose = required("mongoose");
+const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
-    require: true,
+    required: true, 
   },
   email: {
     type: String
@@ -18,7 +17,6 @@ const userSchema = new mongoose.Schema({
   bio: {
     type: String
   },
-
 });
 
 const userModel = mongoose.model("User", userSchema);
